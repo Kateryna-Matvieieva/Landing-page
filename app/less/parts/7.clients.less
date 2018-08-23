@@ -1,0 +1,53 @@
+@import "../components/variables";
+@import "../components/mixins";
+@import "../components/help-classes";
+@import "../components/fonts";
+@import "../components/base";
+.clients {
+	background: @another-background;
+	height: auto;
+	.autopadding ();
+	.text-center ();
+	padding-bottom: calc(50/1600*100vw);
+	p {
+		font-size: calc(20/1600*100vw);
+	}
+}
+
+.clients> :first-child {
+	padding-top: calc(100/1600*100vw);
+	padding-bottom: calc(50/1600*100vw);
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5 {
+	max-width: 100%;
+	height: auto;
+}
+
+.img-2 {
+	margin-top: calc(-10/1600*100vw);
+}
+
+.img-3 {
+	margin-top: calc(10/1600*100vw);
+}
+
+.img-5 {
+	margin-top: calc(-10/1600*100vw);
+}
+
+#slick-rows>div {
+	width: calc(790/1600*100vw);
+	height: calc(175/1600*100vw);
+	margin: auto;
+	line-height: 1;
+}
+
+#slick-rows>div> :first-child {
+	font-size: calc(14/1600*100vw);
+	font-style: italic;
+}

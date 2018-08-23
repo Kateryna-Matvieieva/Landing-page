@@ -1,0 +1,31 @@
+@media screen and (min-width: 1280px) and (max-width: 1580px) {
+  body #slick-images {
+    height: calc(288px);
+  }
+  body #slick-images .arrow-right,
+  body #slick-images .arrow-left {
+    transform: scale(0.9, 0.9);
+  }
+  body #slick-images .arrow-right {
+    right: 1.5%;
+  }
+  body #slick-images .arrow-left {
+    left: 2%;
+  }
+  body #slick-images .team-photo {
+    max-width: calc(16.4375vw);
+  }
+  body #slick-images .data p {
+    font-size: calc(0.875vw);
+  }
+  body #slick-images .data :first-child {
+    margin-bottom: 5px;
+    font-size: calc(1.5vw);
+  }
+  body #slick-images .clients p {
+    transform: scale(1.2, 1.2);
+  }
+  body #slick-images .clients .slick-dots {
+    transform: scale(0.7, 0.7);
+  }
+}

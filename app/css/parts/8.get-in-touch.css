@@ -1,0 +1,278 @@
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.ul-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+@font-face {
+  font-family: 'RobotoSlab';
+  /*  src: url('@{font-folder}@{font-url}.eot'); // IE9 Compat Modes -3
+  src: url('@{font-folder}@{font-url}.eot?#iefix') format('embedded-opentype'), // IE6-IE8 
+  url('@{font-folder}@{font-url}.woff') format('woff'), // Pretty Modern Browsers */
+  src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+  /*  url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg'); // Legacy iOS  */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  /*  src: url('@{font-folder}@{font-url}.eot'); // IE9 Compat Modes -3
+  src: url('@{font-folder}@{font-url}.eot?#iefix') format('embedded-opentype'), // IE6-IE8 
+  url('@{font-folder}@{font-url}.woff') format('woff'), // Pretty Modern Browsers */
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  /*  url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg'); // Legacy iOS  */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  /*  src: url('@{font-folder}@{font-url}.eot'); // IE9 Compat Modes -3
+  src: url('@{font-folder}@{font-url}.eot?#iefix') format('embedded-opentype'), // IE6-IE8 
+  url('@{font-folder}@{font-url}.woff') format('woff'), // Pretty Modern Browsers */
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  /*  url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg'); // Legacy iOS  */
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: url('../img/bg-body.jpg');
+}
+.my-container {
+  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: default;
+  overflow-y: hidden;
+  overflow-x: visible;
+  scroll-behavior: smooth;
+}
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.autopadding {
+  padding: 0 14% 0 14%;
+}
+* > div {
+  margin: 0px;
+  font-family: RobotoSlab;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.75;
+}
+h1 {
+  margin: 0px;
+  padding-top: 95px;
+  text-transform: uppercase;
+  font-family: Montserrat-Regular;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 800;
+}
+h2 {
+  padding-top: 30px;
+  padding-bottom: 65px;
+  margin: 0px;
+  font-family: RobotoSlab;
+  font-size: 16px;
+  text-align: center;
+}
+h3 {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a {
+  font-family: 14px;
+  font-size: RobotoSlab;
+  color: #555555;
+}
+a:hover {
+  color: #c0301c;
+}
+input {
+  font-size: 12px;
+}
+.form-control {
+  height: 45px;
+  border-color: #555555;
+  border-radius: 2px;
+}
+.form-control:focus {
+  border-color: #c0301c;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#message textarea {
+  height: 105px;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  text-transform: uppercase;
+  vertical-align: text-top;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  text-transform: uppercase;
+  top: 10%;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  text-transform: uppercase;
+  top: 10%;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  text-transform: uppercase;
+  top: 10%;
+}
+::placeholder {
+  /* Recent browsers */
+  text-transform: uppercase;
+  vertical-align: text-top;
+}
+.bold-row {
+  height: calc(1.625vw);
+  width: calc(3.125vw);
+  border-bottom: solid #555555 calc(0.125vw);
+  margin: auto;
+}
+.button-style {
+  background: none;
+  border: solid 2px #fff;
+  border-radius: 2px;
+  padding: calc(0.9375vw) calc(2vw) calc(0.625vw) calc(2vw);
+  font-family: Montserrat-Regular;
+  font-size: 16px;
+}
+.button-style:hover,
+:focus {
+  background: #fff;
+  color: #555555;
+  transition: 0.5s;
+}
+.arrow-right,
+.arrow-left {
+  position: absolute;
+  top: 33%;
+  background: #8d8d8d;
+  opacity: 0.75;
+  z-index: 15;
+}
+.arrow-right img,
+.arrow-left img {
+  height: calc(2.5vw);
+  min-height: 25px;
+  width: calc(2.1875vw);
+  min-width: 20px;
+  opacity: 1;
+}
+.arrow-right :hover,
+.arrow-left :hover {
+  background: #c0301c;
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.arrow-right > img :hover,
+.arrow-left :hover,
+.arrow-right :focus,
+.arrow-left :focus {
+  background: #c0301c;
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.arrow-right {
+  right: 1.25%;
+}
+.arrow-left {
+  left: 1.25%;
+}
+.get-in-touch {
+  background: #fff;
+  padding: 0 14% 0 14%;
+  height: auto;
+  line-height: 1;
+  padding-bottom: calc(3.125vw);
+}
+.get-in-touch .col-xs-12 {
+  margin-left: 15%;
+  margin-top: -7%;
+  margin-bottom: 0;
+  transform: scale(0.85, 0.85);
+}
+.get-in-touch form > div > div {
+  padding-bottom: calc(1.25vw);
+}
+.get-in-touch h3 {
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+  font-weight: 650;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+.get-in-touch h3 i {
+  padding-right: calc(1.25vw);
+  font-size: 20px;
+}
+.get-in-touch p {
+  padding-left: 15%;
+  font-family: RobotoSlab;
+  font-size: 11px;
+  line-height: 1.2;
+}
+.get-in-touch span {
+  color: #c0301c;
+}
+.get-in-touch button {
+  background: none;
+  height: 45px;
+  width: 175px;
+  border: solid 1px #555555;
+  border-radius: 1px;
+}
+.get-in-touch button :hover {
+  background: #c0301c;
+}
+.contact-info {
+  position: relative;
+  top: calc(-1.375vw);
+}
+.contact-info :nth-child(3n) {
+  padding-bottom: calc(0.625vw);
+}
+.info {
+  position: relative;
+  top: 0.9vw;
+}

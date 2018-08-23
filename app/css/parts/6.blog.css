@@ -1,0 +1,291 @@
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.ul-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+@font-face {
+  font-family: 'RobotoSlab';
+  /*  src: url('@{font-folder}@{font-url}.eot'); // IE9 Compat Modes -3
+  src: url('@{font-folder}@{font-url}.eot?#iefix') format('embedded-opentype'), // IE6-IE8 
+  url('@{font-folder}@{font-url}.woff') format('woff'), // Pretty Modern Browsers */
+  src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+  /*  url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg'); // Legacy iOS  */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  /*  src: url('@{font-folder}@{font-url}.eot'); // IE9 Compat Modes -3
+  src: url('@{font-folder}@{font-url}.eot?#iefix') format('embedded-opentype'), // IE6-IE8 
+  url('@{font-folder}@{font-url}.woff') format('woff'), // Pretty Modern Browsers */
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  /*  url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg'); // Legacy iOS  */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  /*  src: url('@{font-folder}@{font-url}.eot'); // IE9 Compat Modes -3
+  src: url('@{font-folder}@{font-url}.eot?#iefix') format('embedded-opentype'), // IE6-IE8 
+  url('@{font-folder}@{font-url}.woff') format('woff'), // Pretty Modern Browsers */
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  /*  url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg'); // Legacy iOS  */
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: url('../img/bg-body.jpg');
+}
+.my-container {
+  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: default;
+  overflow-y: hidden;
+  overflow-x: visible;
+  scroll-behavior: smooth;
+}
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.autopadding {
+  padding: 0 14% 0 14%;
+}
+* > div {
+  margin: 0px;
+  font-family: RobotoSlab;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.75;
+}
+h1 {
+  margin: 0px;
+  padding-top: 95px;
+  text-transform: uppercase;
+  font-family: Montserrat-Regular;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 800;
+}
+h2 {
+  padding-top: 30px;
+  padding-bottom: 65px;
+  margin: 0px;
+  font-family: RobotoSlab;
+  font-size: 16px;
+  text-align: center;
+}
+h3 {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a {
+  font-family: 14px;
+  font-size: RobotoSlab;
+  color: #555555;
+}
+a:hover {
+  color: #c0301c;
+}
+input {
+  font-size: 12px;
+}
+.form-control {
+  height: 45px;
+  border-color: #555555;
+  border-radius: 2px;
+}
+.form-control:focus {
+  border-color: #c0301c;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#message textarea {
+  height: 105px;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  text-transform: uppercase;
+  vertical-align: text-top;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  text-transform: uppercase;
+  top: 10%;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  text-transform: uppercase;
+  top: 10%;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  text-transform: uppercase;
+  top: 10%;
+}
+::placeholder {
+  /* Recent browsers */
+  text-transform: uppercase;
+  vertical-align: text-top;
+}
+.bold-row {
+  height: calc(1.625vw);
+  width: calc(3.125vw);
+  border-bottom: solid #555555 calc(0.125vw);
+  margin: auto;
+}
+.button-style {
+  background: none;
+  border: solid 2px #fff;
+  border-radius: 2px;
+  padding: calc(0.9375vw) calc(2vw) calc(0.625vw) calc(2vw);
+  font-family: Montserrat-Regular;
+  font-size: 16px;
+}
+.button-style:hover,
+:focus {
+  background: #fff;
+  color: #555555;
+  transition: 0.5s;
+}
+.arrow-right,
+.arrow-left {
+  position: absolute;
+  top: 33%;
+  background: #8d8d8d;
+  opacity: 0.75;
+  z-index: 15;
+}
+.arrow-right img,
+.arrow-left img {
+  height: calc(2.5vw);
+  min-height: 25px;
+  width: calc(2.1875vw);
+  min-width: 20px;
+  opacity: 1;
+}
+.arrow-right :hover,
+.arrow-left :hover {
+  background: #c0301c;
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.arrow-right > img :hover,
+.arrow-left :hover,
+.arrow-right :focus,
+.arrow-left :focus {
+  background: #c0301c;
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.arrow-right {
+  right: 1.25%;
+}
+.arrow-left {
+  left: 1.25%;
+}
+.blog-posts {
+  background: #fff;
+  height: auto;
+  padding-left: 14%;
+  padding-right: 14%;
+  padding-bottom: calc(1.875vw);
+  text-align: center;
+}
+.blog-posts .col-lg-8 {
+  width: 80%;
+}
+.blog-posts h3 {
+  text-transform: uppercase;
+  font-family: Montserrat-Regular;
+  font-weight: 800;
+  font-size: 16px;
+  text-align: left;
+  padding-left: calc(0.9375vw);
+  margin-top: calc(0.625vw);
+  line-height: 1;
+}
+.blog-posts h3 :hover {
+  color: #c0301c;
+}
+.blog-posts h4 {
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-style: italic;
+  padding-bottom: calc(2.5vw);
+  text-align: left;
+  padding-left: calc(0.9375vw);
+}
+.blog-posts p {
+  text-align: left;
+  line-height: 1.7;
+}
+.blog-posts img {
+  max-height: 400px;
+  max-width: 490px;
+  width: calc(30.625vw);
+  height: calc(25vw);
+  padding-bottom: calc(5vw);
+}
+.blog-posts a {
+  font-family: RobotoSlab;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 5.5;
+  letter-spacing: 0.07em;
+}
+.post {
+  padding-left: calc(1.5625vw);
+}
+.data {
+  width: calc(4.8125vw);
+  margin-left: calc(0.625vw);
+  font-family: Montserrat-Bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: solid 1px #555555;
+  padding-top: 1em;
+}
+.data p {
+  text-align: center;
+  line-height: 1;
+}
+.data :first-child {
+  font-size: 24px;
+}
