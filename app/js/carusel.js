@@ -1,7 +1,7 @@
 $("#slick-images").slick({
 	arrows: true,
-	  nextArrow: '<div class="arrow-right"><img src="img/team/fa-angle-right.png"></div>',
-  prevArrow: '<div class="arrow-left"><img src="img/team/fa-angle-left.png"></div>',
+	  nextArrow: '<div class="arrow-right"><img src="./app/img/team/fa-angle-right.png"></div>',
+  prevArrow: '<div class="arrow-left"><img src="./app/img/team/fa-angle-left.png"></div>',
 	slidesToShow: 4,
 	slidesToScroll: 1,
 	//autoplay: true,
