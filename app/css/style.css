@@ -7042,7 +7042,7 @@ input {
     font-size: 2vw;
   }
   body .blog-posts img {
-    width: calc(100vw/1000*490px*1.75);
+    width: calc(100vw/1000*490*1.75);
     height: auto;
     margin-left: -3%;
   }
@@ -7184,7 +7184,7 @@ input {
     font-size: 2.7vw;
   }
   body .blog-posts img {
-    width: calc(100vw/1000*490px*1.75);
+    width: calc(100vw/1000*490*1.75);
     height: auto;
     margin-left: -6%;
   }
@@ -7481,8 +7481,8 @@ header a {
 .img-works-style {
   max-height: 320px;
   max-width: 360px;
-  width: calc(100vw/1600*360px);
-  height: calc(100vw/1600*315px);
+  width: calc(100vw/1600*350);
+  height: calc(100vw/1600*310);
   margin-top: 1.8vw;
   margin-left: 0.9%;
   margin-right: 0.9%;
@@ -7493,8 +7493,8 @@ header a {
 .bg-works-hover {
   max-height: 320px;
   max-width: 360px;
-  width: calc(100vw/1600*360px);
-  height: calc(100vw/1600*315px);
+  width: calc(100vw/1600*350);
+  height: calc(100vw/1600*310);
   margin-left: -15px;
   background: rgba(211, 110, 96, 0.7);
   color: #fff;
@@ -7585,8 +7585,8 @@ header a {
 .blog-posts img {
   max-height: 400px;
   max-width: 490px;
-  width: calc(100vw/1600*490px);
-  height: calc(100vw/1600*400px);
+  width: calc(100vw/1600*490);
+  height: calc(100vw/1600*400);
   padding-bottom: calc(80/1600*100vw);
 }
 .blog-posts a {
@@ -7742,7 +7742,7 @@ header a {
   color: #fff;
 }
 .footer-name div {
-  width: calc(55/1600*100vw) px;
+  width: calc(55/1600*100vw);
   height: calc(55/1600*100vw);
   padding: 7px 8px 7px 8px;
   display: inline;
